@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/test" app:startDestination="@id/testFragment">
+
+    <fragment android:id="@+id/testFragment" android:name="test.parcelernavcomponent.TestFragment"
+              android:label="TestFragment">
+        <argument android:name="testModel" app:argType="test.parcelernavcomponent.TestModel$$Parcelable"
+                  app:nullable="true" android:defaultValue="@null"/>
+    </fragment>
+</navigation>
